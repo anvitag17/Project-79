@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pizzeria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body onload="showRecommendedToppings()">
+    <div class="topnav">
+        <a class="active" href="#">Pizzeria</a>
+        <div class="topnav-right">
+            <a href="#viewblock">View Menu</a>
+            <a href="#addTopings">Add Menu</a>
+        </div>
+    </div>
+
+    <div class="row" id="viewblock">
+        <div class="img_div">
+            <img class="img-responsive" src="images/pizza.png">
+        </div>
+        <!-- Add menu_div here and create button to call getmenu() -->
+        <div id="menu_div">
+            <button id="menu_button" onclick=getmenu()>Show Menu</button>
+            <div id=empty_menu></div>
+        </div>
+    </div>
+
+    <div class="newRow" id="addTopings">
+        <div class="block1" class="pizzareco">
+            <input id="add_item" placeholder="Recommend a new pizza..." /></br>
+            <button id="add_toppings" onclick=additem()>Recommend a new Pizza</button>
+        </div>
+
+     <div class="pizzareco" id="pizza_recos">
+
+    <!-- Add display_addedmenu div here! -->
+    <div class = "block2">
+        <div id="display_addedmenu"></div>
+    </div>
+    <!--span>
+        <div class="pizzas">
+            <img id="pizzaimage" src="images/pizzaImg.png">
+            <h4>Veg Supreme Pizza</h4>
+        </div>
+        <div class="pizzas">
+            <img id="pizzaimage" src="images/pizzaImg.png">
+            <h4>Deluxe Veggie Pizza</h4>
+        </div>
+        <div class="pizzas">
+            <img id="pizzaimage" src="images/pizzaImg.png">
+            <h4>Veg Supreme Pizza</h4>
+        </div>
+        <div class="pizzas">
+            <img id="pizzaimage" src="images/pizzaImg.png">
+            <h4>Deluxe Veggie Pizza</h4>
+        </div>
+        <div class="pizzas">
+            <img id="pizzaimage" src="images/pizzaImg.png">
+            <h4>Deluxe Veggie Pizza</h4>
+        </div>
+    </span-->
+   </div>
+</div>
+
+
+    <div>
+        <img class="img-responsive" src="images/topping.png">
+    </div>
+
+</body>
+
+</html>
